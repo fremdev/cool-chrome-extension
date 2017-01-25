@@ -1,0 +1,21 @@
+{
+  "manifest_version": 2,
+
+  "name": "Cool Chrome Extension",
+  "description": "This extension will help you make some magic on the page!",
+  "version": "1.0",
+
+  "browser_action": {
+   "default_icon": "icon.png",
+   "default_popup": "popup.html"
+  },
+  "permissions": [
+   "activeTab"
+   ],
+    "content_scripts": [
+    {
+      "matches": ["https://www.ovpn.se/en/jobs/js/test"],
+      "js": ["content.js"]
+    }
+  ]
+}
